@@ -8,16 +8,16 @@ class Orbit:
 		self.name = name
 		self.distance = distance
 		self.craters = craters
-		self.speed_lim = None
+		self.traffic_speed = None
 		
 		# preserve will have default number of craters before weather hits the orbit
 		self.preserve = craters
 		
-	def update_speed_limit(self, limit):
+	def update_traffic_speed(self, speed):
 		"""
-			Updates speed limit with limit argument passed to the method
+			Updates traffic speed with speed argument passed to the method
 		"""
-		self.speed_lim = limit
+		self.traffic_speed = speed
 		
 	def update_craters(self, weather):
 		"""
