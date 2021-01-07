@@ -9,3 +9,6 @@ car = Vehicle("car", 20, 3, ["sunny", "rainy", "windy"])
 # create two instance of orbit
 orbit1 = Orbit("orbit1", 18, 20)
 orbit2 = Orbit("orbit2", 20, 10)
+
+vehicles = [bike, tuktuk, car]
+orbits = [orbit1, orbit2]
