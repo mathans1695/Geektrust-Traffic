@@ -1,4 +1,4 @@
-from initialize import bike, tuktuk, car, orbit1, orbit2
+from initialize import vehicles, orbits
 
 def filter_vehicles(vehicles, weather):
 	"""
@@ -11,18 +11,21 @@ def filter_vehicles(vehicles, weather):
 	
 	return result
 	
-def update_craters(orbits, weather):
+def update_craters_and_traffic_speed(orbits, weather, traffic_speeds):
 	"""
-		Update num of craters based on weather
+		Updates num of craters based on weather
+		Updates traffic speed of every orbit
 	"""
-	for orbit in orbits:
-		orbit.update_craters(weather)
+	
+	for i in range(len(orbits)):
+		orbits[i].update_craters(weather)
+		orbits[i].update_traffic_speed(traffic_speeds[i])
 
-def calculate_time():
-	pass
+def calculate_time(orbit, vehicle):
 	
+	# time = distance/speed
+	time = orbit.distance/vehicle.max_speed * 60
+	# additional time taken to cross each craters
+	additional_time = orbit.craters * vehicle.overcome_time
 	
-inp = "RAINY 45 20"
-weather, speed_lim1, speed_lim2 = inp.split(' ')
-vehicles = [bike, tuktuk, car]
-orbits = [orbit1, orbit2]
+	return time + additional_time
