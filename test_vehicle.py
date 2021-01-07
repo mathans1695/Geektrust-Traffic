@@ -22,6 +22,8 @@ class TestVehicle(unittest.TestCase):
 		
 		# Reset the speed for next test
 		self.bike.reset_speed()
+		# Speed should reset to original state
+		self.assertEqual(self.bike.max_speed, 10)
 		
 		# max_speed should equal traffic speed, if traffic speed < max_speed of vehicle
 		
