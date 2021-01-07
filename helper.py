@@ -1,5 +1,3 @@
-from initialize import vehicles, orbits
-
 def filter_vehicles(vehicles, weather):
 	"""
 		Filter possible vehicles based on weather
@@ -27,5 +25,8 @@ def calculate_time(orbit, vehicle):
 	time = orbit.distance/vehicle.max_speed * 60
 	# additional time taken to cross each craters
 	additional_time = orbit.craters * vehicle.overcome_time
+	
+	print(orbit.name, vehicle.name)
+	print(time+additional_time)
 	
 	return time + additional_time

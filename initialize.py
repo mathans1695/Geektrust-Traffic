@@ -3,7 +3,7 @@ from orbit import Orbit
 
 # create three instance of vehicle
 bike = Vehicle("bike", 10, 2, ["sunny", "windy"])
-tuktuk = Vehicle("tuk tuk", 12, 1, ["sunny", "rainy"])
+tuktuk = Vehicle("tuktuk", 12, 1, ["sunny", "rainy"])
 car = Vehicle("car", 20, 3, ["sunny", "rainy", "windy"])
 
 # create two instance of orbit
