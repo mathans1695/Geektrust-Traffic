@@ -4,7 +4,8 @@ class Orbit:
 		* Pass distance of an orbit 
 		* Total number of craters
 	"""
-	def __init__(self, distance, craters):
+	def __init__(self, name, distance, craters):
+		self.name = name
 		self.distance = distance
 		self.craters = craters
 		# preserve will have default number of craters before weather hits the orbit
