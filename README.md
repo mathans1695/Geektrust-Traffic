@@ -23,5 +23,5 @@
 ### Tests:
 - Run each test using *python filename*
 - Tests were provided for every modules, expect 'initialize.py'
-- data added to test whole app
+- "data.txt" contains sample input data to test app
 - You have to run test files individually.
