@@ -26,7 +26,4 @@ def calculate_time(orbit, vehicle):
 	# additional time taken to cross each craters
 	additional_time = orbit.craters * vehicle.overcome_time
 	
-	print(orbit.name, vehicle.name)
-	print(time+additional_time)
-	
 	return time + additional_time
