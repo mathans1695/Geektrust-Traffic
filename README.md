@@ -12,7 +12,7 @@
 
 - *vehicle.py*:
   - This module contains definition of vehicle.
-  - You can set and view the property of an vehicle
+  - You can set and view the property of a vehicle
 
 - *helper.py*:
   - helper module contains useful functions to select vehicle based on weather condition, calculate time to travel on a particular orbit, or update certains properties of an orbit
@@ -21,7 +21,7 @@
   - Create vehicle and orbit instances. This module act as database of vehicles and orbits
   
 ### Tests:
-- Run each test using *python <filename>*
+- Run each test using *python filename*
 - Tests were provided for every modules, expect 'initialize.py'
 - data added to test whole app
 - You have to run test files individually.
